@@ -1,0 +1,61 @@
+.website-logo
+{
+    max-width: 100px;
+    max-height: 100px;
+    float: left;
+    overflow: auto;
+    padding: 1%;
+}
+.login-button
+{
+    display: inline-block;
+    float: right;
+    text-decoration: none;    
+}
+h1
+{
+    display: inline-block;
+    text-align: center;
+}
+h2{display: block;text-align: center;}
+.page-header
+{
+    text-align: center;
+    overflow: auto;
+    padding: 0px;
+    margin: 0px;
+}
+.btn-primary
+{
+    border-radius: 0px;
+}
+.nav-button
+{
+    width:130px;
+    text-align: center;
+}
+.col-sm-2{width:100px;}
+.panel, .panel-heading
+{
+    margin: 0px;
+    border-radius: 0px;
+    overflow: auto;
+}
+.panel-heading
+{
+    display: inline-block;
+    float: right;
+}
+.panel-primary>.panel-heading, .panel-primary
+{
+    background-color: #333;border-color: #333;
+}
+.panel-heading>a
+{
+    text-decoration: none;
+    color:#9d9d9d;
+    float: right;
+}
+a:hover{color: white;text-decoration: none;}
+.body-stocks{width: 250px;height: 200px;display: block;}
+.button{float:right;display: inline;}

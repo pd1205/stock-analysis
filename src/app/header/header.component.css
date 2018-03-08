@@ -1,0 +1,19 @@
+#logo{
+    float: left;
+    width: 2em;
+    height: 2em;
+}
+#heading{
+    display: inline-block;
+    margin: 0em;
+    text-align: center;
+}
+#caption{
+    display: inline-block;
+    margin: 0em;
+    color: rgb(80, 81, 82);
+}
+#titleHeading{
+    display: block;
+    overflow: auto;
+}

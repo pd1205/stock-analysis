@@ -1,0 +1,22 @@
+li{
+    margin: 2em;
+    list-style-type: none;
+    padding: 1em;
+    margin: 1em;
+    display: flex;
+}
+a:visited{
+    color: rgb(48, 35, 19);
+    background-color: black;
+}
+a:active{
+    color: black;
+    background-color: aliceblue;
+}
+.flex-container{
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 0%;
+    margin: 0%;
+}
