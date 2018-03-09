@@ -8,7 +8,6 @@
 }
 .login-button
 {
-    display: inline-block;
     float: right;
     text-decoration: none;    
 }
@@ -17,7 +16,18 @@ h1
     display: inline-block;
     text-align: center;
 }
-h2{display: block;text-align: center;}
+h2{
+    display: block;
+    text-align: center;
+}
+.bottom-body{
+    display: block;
+    overflow: auto;
+}
+.cards{
+    display: inline-block;
+    overflow: hidden;
+}
 .page-header
 {
     text-align: center;
@@ -43,7 +53,6 @@ h2{display: block;text-align: center;}
 }
 .panel-heading
 {
-    display: inline-block;
     float: right;
 }
 .panel-primary>.panel-heading, .panel-primary
@@ -58,4 +67,4 @@ h2{display: block;text-align: center;}
 }
 a:hover{color: white;text-decoration: none;}
 .body-stocks{width: 250px;height: 200px;display: block;}
-.button{float:right;display: inline;}
+.button{display: inline;}

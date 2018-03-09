@@ -1,0 +1,10 @@
+.first-card{
+    max-width: 35%;
+    max-height: 10%;
+    overflow: auto;
+    margin: 10px;
+    float: left;
+}
+body{
+    display: block;
+}
