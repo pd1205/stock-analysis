@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-analytics',
@@ -6,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./analytics.component.css']
 })
 export class AnalyticsComponent implements OnInit {
-
-  constructor() { }
+ second;
+ first;
+  constructor(private service: DataService) {}
 
   ngOnInit() {
+   this.second = this.service.prasanth.members[0].powers[1];
   }
 
 }

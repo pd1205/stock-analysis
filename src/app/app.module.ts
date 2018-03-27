@@ -20,6 +20,8 @@ import { AnalyticsComponent } from './analytics/analytics.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { NewsComponent } from './news/news.component';
 import { UserCardsComponent } from './user-cards/user-cards.component';
+import { StudentComponent } from './student/student.component';
+import { UsersComponent } from './users/users.component';
 
 
 @NgModule({
@@ -35,6 +37,8 @@ import { UserCardsComponent } from './user-cards/user-cards.component';
     PortfolioComponent,
     NewsComponent,
     UserCardsComponent,
+    StudentComponent,
+    UsersComponent,
   ],
   imports: [
     BrowserModule,
