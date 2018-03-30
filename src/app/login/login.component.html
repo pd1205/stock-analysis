@@ -1,0 +1,27 @@
+<form>
+  <div class="form-group">
+  <label for="userName">User Name</label>
+  <input required ngModel name="userName"
+         #userName='ngModel'
+         (change)="log(userName)"
+         type="text"
+         class="form-control">
+         <div class="alret alert-danger"
+                    *ngIf="userName.touched && !userName.valid">
+                    user name is required
+         </div>
+  </div>
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input required 
+           ngModel 
+           name="password"
+           #password="ngModel"
+            type="text"
+            (click)='log(password)'
+           class="form-control">
+  </div>
+  <div class="alert alert-danger" 
+       *ngIf="password.touched && !password.valid">password is required</div>
+  <button class="btn btn-primary">submit</button>
+</form>

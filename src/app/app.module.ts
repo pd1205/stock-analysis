@@ -22,6 +22,7 @@ import { NewsComponent } from './news/news.component';
 import { UserCardsComponent } from './user-cards/user-cards.component';
 import { StudentComponent } from './student/student.component';
 import { UsersComponent } from './users/users.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -39,6 +40,7 @@ import { UsersComponent } from './users/users.component';
     UserCardsComponent,
     StudentComponent,
     UsersComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
