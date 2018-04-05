@@ -11,6 +11,7 @@ public card;
   constructor() { }
 
   ngOnInit() {
+    let inputName;
   }
 
 }

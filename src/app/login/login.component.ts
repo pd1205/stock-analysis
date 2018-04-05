@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { CanActivate, CanActivateChild, CanDeactivate } from '@angular/router';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -8,9 +8,6 @@ import { Component, OnInit } from '@angular/core';
 export class LoginComponent implements OnInit {
 
   constructor() { }
-  log(x){
-    console.log(x);
-  }
 
   ngOnInit() {
   }

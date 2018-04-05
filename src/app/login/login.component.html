@@ -1,27 +1,36 @@
 <form>
   <div class="form-group">
   <label for="userName">User Name</label>
-  <input required ngModel name="userName"
+  <input required 
+         pattern="[A-Za-z0-9]*"
+         minlength="2"
+         maxlength="10"
+         ngModel
+         name="userName"
          #userName='ngModel'
-         (change)="log(userName)"
-         type="text"
          class="form-control">
          <div class="alret alert-danger"
                     *ngIf="userName.touched && !userName.valid">
-                    user name is required
+          <div *ngIf="userName.errors.required">user name is required</div>
+          <div *ngIf="userName.errors.minlength">username should be {{userName.errors.minlength.requiredLength}} or longer</div>
+          <div *ngIf="userName.errors.maxlength">username is too long</div>
+          <div *ngIf="userName.errors.pattern">username should be text</div>
          </div>
+         
   </div>
   <div class="form-group">
     <label for="password">Password</label>
     <input required 
+           minlength="4"
            ngModel 
            name="password"
            #password="ngModel"
-            type="text"
-            (click)='log(password)'
            class="form-control">
   </div>
   <div class="alert alert-danger" 
-       *ngIf="password.touched && !password.valid">password is required</div>
+       *ngIf="password.touched && !password.valid">
+        <div *ngIf="password.errors.minlength">it should be atleast {{password.errors.minlength.requiredLength}}</div>
+        <div *ngIf="password.errors.required">password required</div>
+      </div>
   <button class="btn btn-primary">submit</button>
 </form>
