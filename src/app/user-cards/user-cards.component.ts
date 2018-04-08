@@ -1,12 +1,12 @@
 import { Component, OnInit, Input } from '@angular/core';
 import {MatCardModule } from '@angular/material/card';
 import { DataService } from '../data.service';
+import { TestService, TestServices } from '../test.service'
 
 @Component({
   selector: 'app-user-cards',
   templateUrl: './user-cards.component.html',
-  styleUrls: ['./user-cards.component.css']
-  //inputs:['card']
+  styleUrls: ['./user-cards.component.css'],
 })
 export class UserCardsComponent implements OnInit {
 public nameOne;

@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NewsComponent implements OnInit {
 
+  public x;
+  public y;
+  public output;
   constructor() { }
 
   ngOnInit() {
+
+    //onClick(this.x,this.y){
+     // this.output = this.x*this.y;
+    //}
   }
 
 }
