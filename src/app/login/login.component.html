@@ -9,7 +9,7 @@
          name="userName"
          #userName='ngModel'
          class="form-control">
-         <div class="alret alert-danger"
+         <div class="alert alert-danger"
                     *ngIf="userName.touched && !userName.valid">
           <div *ngIf="userName.errors.required">user name is required</div>
           <div *ngIf="userName.errors.minlength">username should be {{userName.errors.minlength.requiredLength}} or longer</div>

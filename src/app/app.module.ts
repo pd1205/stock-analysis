@@ -7,6 +7,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule, MatCheckboxModule } from '@angular/material';
 import {MatCardModule} from '@angular/material/card';
 import { MatTabsModule } from '@angular/material';
+import { MatTableModule } from '@angular/material';
+import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -51,7 +53,8 @@ import { LoginComponent } from './login/login.component';
     MatCardModule,
     NgbModule.forRoot(),
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent]

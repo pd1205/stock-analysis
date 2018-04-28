@@ -10,12 +10,16 @@ import { TestService, TestServices } from '../test.service'
 })
 export class UserCardsComponent implements OnInit {
 public nameOne;
+public age;
+public power;
 @Input() public card;
   constructor(private service:DataService){
     }
 
   ngOnInit() {
     this.nameOne = this.service.prasanth.members[this.card].name;
+    this.age = this.service.prasanth.members[this.card].age;
+    this.power = this.service.prasanth.members[this.card].powers;
   }
 
 }
