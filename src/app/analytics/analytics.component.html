@@ -1,4 +1,4 @@
-<div>table:</div>
+<div id="table"><h1>Table:</h1>
 <div class="example-container mat-elevation-z8">
     <mat-table #table [dataSource]="customer">
   
@@ -24,5 +24,6 @@
       <mat-header-row *matHeaderRowDef="columnDisplay"></mat-header-row>
       <mat-row *matRowDef="let row; columns: columnDisplay;"></mat-row>
     </mat-table>
+  </div>
   </div>
   

@@ -10,3 +10,9 @@
     overflow: auto;
     max-height: 500px;
   }
+  #table{
+    margin: 15px;
+  }
+  h1{
+    text-shadow: 1px 0px 3px rgb(54, 54, 54);
+  }
