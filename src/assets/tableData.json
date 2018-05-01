@@ -1,17 +1,17 @@
     [
         {
         "customerID":1,
-        "firstName" : "prasanth",
+        "firstName" : "user1",
         "lastName" : "one"
     },
     {
         "customerID": 2,
-        "firstName": "siddhu",
+        "firstName": "user2",
         "lastName":"two"
     },
     {
         "customerID": 3,
-        "firstName": "dhinesh",
+        "firstName": "user3",
         "lastName":"three"
     }
 ]

@@ -6,8 +6,8 @@ export class TestStudentService implements TestServices {
   getData() {
     const list: TestService[] = [
       {
-        firstName:'prasanth',
-        lastName: 'devarapalli',
+        firstName:'firstuser',
+        lastName: 'hisName',
         age: 25
       }
     ];
