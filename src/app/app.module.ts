@@ -50,6 +50,7 @@ import { LoginComponent } from './login/login.component';
     MatButtonModule,
     MatCheckboxModule,
     MatTabsModule,
+    MatTableModule,
     MatCardModule,
     NgbModule.forRoot(),
     FormsModule,

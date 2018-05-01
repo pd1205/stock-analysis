@@ -12,6 +12,13 @@ export class NewsComponent implements OnInit {
   public output;
   constructor() { }
 
+  public name = {
+
+    firstName : "prasanth",
+    lastName : "chaudhary"
+
+  }
+
   ngOnInit() {
 
     //onClick(this.x,this.y){

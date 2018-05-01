@@ -13,19 +13,17 @@ import { customer } from '../modelClass';
 })
 export class AnalyticsComponent implements OnInit {
 
-  public firstName;
-  public lastName;
-  public customerID;
+  public customer;
+  public columnDisplay = ["ID","firstName","lastName"];
+
   constructor(private service: ModelDataService) {
   }
-
+  
   ngOnInit(){             
   
     this.service.getCustomerFromAPI()
-        .subscribe((response) =>{ 
-          this.customerID = response[0].customerID;
-          this.firstName = response[0].firstName;
-          this.lastName = response[0].lastName;
+        .subscribe((res) =>{ 
+          this.customer = res;
         
         }); 
   }

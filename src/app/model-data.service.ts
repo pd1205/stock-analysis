@@ -9,9 +9,7 @@ export class ModelDataService {
 
 
  url = "assets/tableData.json";
-  constructor(private http: Http){
-
-  }
+  constructor(private http: Http){}
   getCustomerFromAPI(){
 
     return this.http.get(this.url)
