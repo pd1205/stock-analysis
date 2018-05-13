@@ -15,17 +15,23 @@ export class AnalyticsComponent implements OnInit {
 
   public customer;
   public columnDisplay = ["ID","firstName","lastName"];
+  public post$;
 
   constructor(private service: ModelDataService) {
   }
   
   ngOnInit(){             
   
-    this.service.getCustomerFromAPI()
+    this.post$ = this.service.getCustomerFromAPI()
         .subscribe((res) =>{ 
           this.customer = res;
-        
         }); 
+  
+  }
+  deleteRow() {
+    console.log(customer);
+    console.log(this.customer);
+
   }
 
 }

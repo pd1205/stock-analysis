@@ -22,4 +22,8 @@ public power;
     this.power = this.service.prasanth.members[this.card].powers;
   }
 
+  ngAfterViewInit(){
+    
+  }
+
 }

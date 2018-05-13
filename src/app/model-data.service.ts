@@ -7,7 +7,6 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class ModelDataService {
 
-
  url = "assets/tableData.json";
   constructor(private http: Http){}
   getCustomerFromAPI(){
@@ -17,5 +16,5 @@ export class ModelDataService {
 
     //this.customerID = JSON.stringify(response.json())
   }
-  
+
 }

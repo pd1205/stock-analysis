@@ -11,19 +11,21 @@
   
       <!-- Name Column -->
       <ng-container matColumnDef="firstName">
-        <mat-header-cell *matHeaderCellDef> first </mat-header-cell>
+        <mat-header-cell *matHeaderCellDef> first name </mat-header-cell>
         <mat-cell *matCellDef="let customer"> {{customer.firstName}} </mat-cell>
       </ng-container>
   
       <!-- Weight Column -->
       <ng-container matColumnDef="lastName">
-        <mat-header-cell *matHeaderCellDef> last </mat-header-cell>
-        <mat-cell *matCellDef="let customer">{{customer.lastName}} </mat-cell>
+        <mat-header-cell *matHeaderCellDef> last name </mat-header-cell>
+        <mat-cell *matCellDef="let customer">{{customer.lastName}} 
+          <span><button (click)="deleteRow()">delete</button></span></mat-cell>
       </ng-container>
   
       <mat-header-row *matHeaderRowDef="columnDisplay"></mat-header-row>
       <mat-row *matRowDef="let row; columns: columnDisplay;"></mat-row>
+
     </mat-table>
   </div>
   </div>
-  
+ 
