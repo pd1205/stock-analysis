@@ -20,10 +20,6 @@ h2{
     display: block;
     text-align: center;
 }
-.bottom-body{
-    display: block;
-    overflow: auto;
-}
 .cards{
     display: inline-block;
     overflow: hidden;
@@ -66,5 +62,4 @@ h2{
     float: right;
 }
 a:hover{color: white;text-decoration: none;}
-.body-stocks{width: 250px;height: 200px;display: block;}
 .button{display: inline;}

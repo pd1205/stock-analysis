@@ -1,17 +1,12 @@
-<div class="top-body">
-  <h2>Stocks:</h2>
-  <div class="body-stocks">
-      <p>this is where information regarding stocks is displayed or "lorem ipsum"</p>
-  </div>
-</div>
 <div class="cards"><app-user-cards [card]='0'></app-user-cards></div>
 <div class="cards"><app-user-cards [card]='1'></app-user-cards></div>
 <div class="cards"><app-user-cards [card]='2'></app-user-cards></div>
-<div class="bottom-body">
-  <h2>Cryptocurrencies:</h2>
-  <div class="body-stocks">
-      lorem ipsum
-  </div>
+<div class="cards"><app-user-cards [card]='2'></app-user-cards></div>
+<div class="cards"><app-user-cards [card]='2'></app-user-cards></div>
+<div class="cards"><app-user-cards [card]='2'></app-user-cards></div>
+<div>
+  <input type="text" [(ngModel)]="x">
+  <p>{{x}}</p>
 </div>
 <div class="panel panel-primary">
   <div class="panel-heading"><a href="#" alt="link to contact us">Contact Us</a></div>

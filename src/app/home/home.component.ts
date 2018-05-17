@@ -8,10 +8,11 @@ import { UserCardsComponent } from '../user-cards/user-cards.component';
 })
 export class HomeComponent implements OnInit {
 public card;
+public x = "";
   constructor() { }
 
   ngOnInit() {
-    let inputName;
+    
   }
 
 }
